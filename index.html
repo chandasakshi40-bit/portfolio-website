@@ -1,0 +1,390 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAKSHI CHANDA | Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+:root{
+    --primary:#00d4ff;
+    --secondary:#7b2cbf;
+    --dark:#0a0a0a;
+    --card:#151515;
+    --text:#f5f5f5;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--dark);
+    color:var(--text);
+}
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#050505;
+    z-index:1000;
+}
+
+.logo{
+    color:var(--primary);
+    font-weight:bold;
+    font-size:1.2rem;
+}
+
+nav ul{
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+nav a:hover{
+    color:var(--primary);
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+    background:linear-gradient(135deg,#050505,#101a30);
+}
+
+.hero h1{
+    font-size:4rem;
+    color:var(--primary);
+}
+
+.hero h2{
+    margin:15px 0;
+    color:#cccccc;
+    font-size:1.2rem;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    color:#aaaaaa;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 25px;
+    background:linear-gradient(90deg,var(--primary),var(--secondary));
+    color:black;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+section{
+    padding:90px 10%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2.2rem;
+}
+
+.title span{
+    color:var(--primary);
+}
+
+.card{
+    background:var(--card);
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.skill,.project{
+    background:var(--card);
+    padding:20px;
+    border-radius:15px;
+}
+
+.skill h3,
+.project h3{
+    color:var(--primary);
+    margin-bottom:10px;
+}
+
+.skill ul{
+    padding-left:20px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact a{
+    color:var(--primary);
+    text-decoration:none;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    border-top:1px solid #222;
+}
+
+@media(max-width:768px){
+    nav ul{
+        display:none;
+    }
+
+    .hero h1{
+        font-size:2.5rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">SAKSHI CHANDA</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#leadership">Leadership</a></li>
+<li><a href="#achievements">Achievements</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+<div>
+<h1>SAKSHI CHANDA</h1>
+
+<h2>
+Cyber Security Enthusiast |
+AI & ML Learner |
+B.Tech CSE Student |
+ISTE Vice Captain |
+SIH Participant
+</h2>
+
+<p>
+Passionate about technology, innovation, and problem-solving.
+I enjoy building practical solutions, exploring cybersecurity concepts,
+and learning emerging technologies like Artificial Intelligence and Machine Learning.
+</p>
+
+<a href="#projects" class="btn">View Projects</a>
+</div>
+</section>
+
+<section id="about">
+<h2 class="title">About <span>Me</span></h2>
+
+<div class="card">
+<p>
+I am a Computer Science Engineering student at Poornima Institute of Engineering & Technology, Jaipur,
+with a strong interest in Cyber Security, Artificial Intelligence, and emerging technologies.
+
+As the Vice Captain of ISTE, I have helped organize technical seminars, hackathons,
+and student engagement activities that promote innovation and collaborative learning.
+</p>
+</div>
+</section>
+
+<section id="education">
+<h2 class="title">Education</h2>
+
+<div class="card">
+<h3>B.Tech – Computer Science Engineering</h3>
+<p>Poornima Institute of Engineering & Technology, Jaipur</p>
+<p>Expected Graduation: 2029</p>
+</div>
+
+<div class="card">
+<h3>Class XII</h3>
+<p>Government Senior Secondary School, Phalodi</p>
+<p>PCM – 94%</p>
+</div>
+
+<div class="card">
+<h3>Class X</h3>
+<p>Saraswati Senior Secondary School</p>
+<p>85%</p>
+</div>
+</section>
+
+<section id="skills">
+<h2 class="title">Skills</h2>
+
+<div class="grid">
+
+<div class="skill">
+<h3>Programming</h3>
+<ul>
+<li>C</li>
+<li>C++</li>
+<li>Python (Learning)</li>
+</ul>
+</div>
+
+<div class="skill">
+<h3>Cyber Security</h3>
+<ul>
+<li>Network Security Fundamentals</li>
+<li>Ethical Hacking Basics</li>
+<li>Information Security Concepts</li>
+</ul>
+</div>
+
+<div class="skill">
+<h3>AI & ML</h3>
+<ul>
+<li>AI Fundamentals</li>
+<li>Machine Learning Concepts</li>
+</ul>
+</div>
+
+<div class="skill">
+<h3>Tools</h3>
+<ul>
+<li>Git & GitHub</li>
+<li>Linux</li>
+<li>VS Code</li>
+<li>Wireshark</li>
+<li>Nmap</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<section id="projects">
+<h2 class="title">Projects</h2>
+
+<div class="grid">
+
+<div class="project">
+<h3>Automatic Timetable Generation Website</h3>
+<p>Web-based system for automatic academic timetable generation.</p>
+</div>
+
+<div class="project">
+<h3>RFID-Based Smart Trolley System</h3>
+<p>RFID-powered shopping trolley for automated billing.</p>
+</div>
+
+<div class="project">
+<h3>Air Quality Monitoring System</h3>
+<p>IoT-based environmental monitoring solution.</p>
+</div>
+
+<div class="project">
+<h3>Personal Portfolio Website</h3>
+<p>Responsive website to showcase skills and achievements.</p>
+</div>
+
+</div>
+</section>
+
+<section id="leadership">
+<h2 class="title">Leadership</h2>
+
+<div class="card">
+<h3>Vice Captain – ISTE</h3>
+<p>
+• Organized technical seminars and workshops<br>
+• Assisted in conducting hackathons and technical events<br>
+• Coordinated student participation activities
+</p>
+</div>
+</section>
+
+<section id="achievements">
+<h2 class="title">Achievements</h2>
+
+<div class="card">
+<p>
+• Smart India Hackathon Participant<br>
+• ISTE Vice Captain<br>
+• Organized technical seminars and hackathons<br>
+• 94% in Class XII PCM
+</p>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="title">Contact</h2>
+
+<div class="contact">
+
+<p>Email:</p>
+<p>
+<a href="mailto:chandasakshi40@gmail.com">
+chandasakshi40@gmail.com
+</a>
+</p>
+
+<br>
+
+<p>LinkedIn:</p>
+<p>
+<a href="https://www.linkedin.com/in/sakshi-chanda-515ba937b" target="_blank">
+linkedin.com/in/sakshi-chanda-515ba937b
+</a>
+</p>
+
+<br>
+
+<p>Jaipur, Rajasthan, India</p>
+
+<br>
+
+<h3>
+Learning, Building, and Growing Through Technology.
+</h3>
+
+</div>
+</section>
+
+<footer>
+© 2026 SAKSHI CHANDA | Portfolio
+</footer>
+
+</body>
+</html>
+```
